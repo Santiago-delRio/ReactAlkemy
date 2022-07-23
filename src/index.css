@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .heading1 {
+    @apply text-2xl font-semibold text-black;
+  }
+  .heading2 {
+    @apply font-semibold text-xl text-negro leading-[1.15] sm:text-2xl sm:leading-[1.15];
+  }
+  .btnNaranja {
+    @apply w-full py-3 mt-4 mb-2 bg-naranjaPrincipal text-white text-base rounded-lg border border-naranjaPrincipal hover:bg-white hover:text-naranjaPrincipal;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  background-color: #FAFAFA;
+}
